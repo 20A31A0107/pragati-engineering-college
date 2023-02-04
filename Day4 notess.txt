@@ -1,0 +1,100 @@
+****DAY4 NOTES****
+
+
+STRINGS:-Python strings are "immutable" which means they cannot be changed after
+         they are created (Java strings also use this immutable style). Since 
+         strings can't be changed, we construct *new* strings as we go to 
+         represent computed values.
+         In computer programming, a string is a sequence of characters.
+         We use single quotes(') or double quotes(") to represent a string in- 
+         Python.
+         Strings are used for storing text/characters. For example, "Hello World"
+         is a string of characters.
+         syntax codes ( #,*,&,@,~,?,(,),%,and ^) enclosed in single quotation 
+         marks ( ' ).
+             
+Case Changing of Strings:-The below functions are used to change the case of the strings.
+
+          lower()  : Converts all uppercase characters in a string into lowercase
+          upper()  : Converts all lowercase characters in a string into uppercase
+          title()  : Convert string to title case
+
+
+
+#------------------------------function--------------------------#
+str="Hii Pinku"
+print(str.swapcase())
+print(str.upper())
+print(str.lower())
+print(str.capitalize())
+
+str="hii pinku"
+print(str.split())
+
+
+print('-'.join(['india','is','great']))
+enumerate()
+  to know the assign of variable.only evaluated in list,tuple,dictionaries
+  
+
+
+
+#--------------------------string import---------------------#
+
+import string
+print(type(string.digits))
+print(string.ascii_letters)
+print(string.digits)
+print(string.find(string.lowercase,'g')!=-1)
+
+str1=("hello")
+print(dir(str1))
+
+match import:
+
+  this is a program to demonstrate a match() using re-import
+
+#----------------------------match import------------------------#
+
+import re
+str1="she sells sea shells at sea shore"
+p1="sells"
+if re.match(p1,str1):
+    print("found")
+else:
+    print(p1,"not found in str1")
+p2="she"
+if re.match(p2,str1):
+    print("match found")
+else:
+    print(p1,"not present in string")
+
+
+
+#anagram examples
+listen-silent
+dog-god
+race-acer
+
+
+z-fill()
+  fill the empty positions with zeros
+
+example:
+str='66'
+print(str.zfill())
+
+
+#------------check anagram or not------------#
+
+str1="silent"
+str2="listen"
+s=len(str1)
+l=len(str2)
+if (s==l):
+    sorted(str1)==sorted(str2)
+    print("anagram")
+
+else:
+    print("not an anagram")
+

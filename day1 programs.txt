@@ -1,0 +1,90 @@
+****DAY1 PROGRAMS****
+
+
+    #print the name in telugu
+    print(chr(3077)+chr(3114)+chr(3120)+chr(3149)+chr(3107))
+    -----------------------------------------------------------------------
+    #import
+    import keyword
+    print(keyword.kwlist)
+    ----------------------------------------------------------------------
+    #perimeter of a rectangle
+    l,b=int(input("enter the length   l:")),int(input("enter the breadth b:"))
+    perimeter=2*(l+b)
+    print("perimeter",perimeter)
+    ----------------------------------------------------------------------
+     #area of a rectangle
+     l,b=int(input("enter the length l:")),int(input("enter the breadth b:"))
+     area=l*b
+     print("area",area)
+     ---------------------------------------------------------------------
+     #swapping of two numbers using temp
+     num1=11
+     num2=22
+     print("Before swapping")
+     print(num1)
+     print(num2)
+     temp=num1
+     num1=num2
+     num2=temp
+     print("After swapping")
+     print("the value of num1 after                   swpping=",num1)
+     print("the value of num2 after swapping=",num2) 
+     ---------------------------------------------------------------------
+     #swapping of numbers without temp
+     m=1
+     n=2
+     print("Before swapping")
+     print(m,n)
+     m=m+n
+     n=m-n
+     m=m-n
+     print("After swapping")
+     print(m,n)
+     --------------------------------------------------------------------
+
+    #comparision&logical operator
+    a=1000
+    b=1500
+    c=-500
+    d=4000
+    print(a>b and a>c)
+    print(a<b and a<c and a>d)
+    e=2000
+    print(c if c<e else e)
+    -----------------------------------------------------------
+    #end()
+    a=30
+    b=20
+    c=50
+    print(a,b,c,end=" ")
+
+    #== comparing value and datatype
+    a=6
+    b=True
+    if(1==b):
+        print("yes")
+    else:
+        print("no")
+
+    #reverse order of alphabets
+    
+    for i in range(122,96,-1):
+        print(chr(i),end=" ")
+
+    #double for loop
+
+    for i in range(1,6):
+    for j in range(1,6):
+        print("*",end=" ")
+        print("/n",)
+    
+    #for loop
+
+    age=[2,4,6,8]
+    for i in range(len(age)):
+        print(i)
+
+
+
+
